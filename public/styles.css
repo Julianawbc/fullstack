@@ -1,0 +1,74 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #000;
+    color: #ff3333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 400px;
+    background-color: transparent;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #ff3333;
+    position: relative;
+}
+
+h2 {
+    color: #ff3333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    color: #333;
+    background-color: #fff;
+}
+
+button {
+    background-color: #ff3333;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, width 0.3s ease;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    background-color: #cc0000;
+    width: 55%;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Evita que o canvas bloqueie interações com o formulário */
+}
+
+

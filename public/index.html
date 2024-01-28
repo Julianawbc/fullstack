@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuário</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    
+    <div class="container">
+        <h2>Registro de Usuário</h2>
+        <form id="registerForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirmPassword">Confirme a Senha:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <button id="registerButton" type="button" onclick="registerUser()">Registrar</button>
+        </form>
+    </div>
+
+    <canvas id="matrix"></canvas>
+
+    
+    <script src="scripts.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
